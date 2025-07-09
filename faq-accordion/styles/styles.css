@@ -110,3 +110,32 @@ hr {
   color: hsl(228, 45%, 44%);
 }
 
+@media only screen and (min-width: 25rem) {
+  body {
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+    background-size: contain;
+  }
+  .main-container {
+    max-width: 37.5rem;
+    padding: 2.5rem;
+    margin-top: 10.43rem;
+  }
+  .title-container {
+    margin-bottom: 2rem;
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  .question {
+    p {
+      font-size: 1.125rem;
+    }
+  }
+  .answer {
+    font-size: 1rem;
+  }
+}
