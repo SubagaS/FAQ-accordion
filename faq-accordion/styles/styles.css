@@ -21,8 +21,6 @@
 html,
 body {
   width: 100%;
-  height: auto;
-  min-height: 100vh;
   overflow-y: auto;
   font-size: 16px;
   font-family: 'WorkSans';
@@ -32,6 +30,7 @@ body {
   --purple-100: hsl(275, 100%, 97%);
   --purple-600: hsl(292, 16%, 49%);
   --purple-950: hsl(292, 42%, 14%);
+  --violet-600: hsl(281, 83%, 54%);
 }
 body {
   display: flex;
@@ -49,9 +48,7 @@ body {
   background-color: var(--white);
   padding: 1.5rem;
   border-radius: 0.5rem;
-  position: fixed;
-  top: 8.1rem;
-  /* margin-top: 8.1rem; */
+  margin-top: 8.1rem;
 }
 .title-container {
   display: flex;
@@ -86,8 +83,15 @@ body {
   .minus-icon {
     display: none;
   }
+  p:hover {
+    cursor: pointer;
+    color: var(--violet-600);
+  }
+  img:hover {
+    cursor: pointer;
+  }
 }
-.question-container > p {
+.answer {
   font-size: 0.875rem;
   color: var(--purple-600);
   line-height: 150%;
@@ -105,3 +109,4 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
